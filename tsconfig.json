@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "convex/users.js", "convex/schema.js", "configs/firebaseConfig.js", "components/ui/Button.js", "app/_components/Hero.js", "app/_components/Header.js", "app/_components/Authentication.jsx", "app/layout.js", "app/page.js", "app/provider.js", "app/ConvexClientProvider.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "convex/users.js", "convex/schema.js", "configs/firebaseConfig.js", "components/ui/Button.jsx", "app/_components/Hero.jsx", "app/_components/Header.jsx", "app/_components/Authentication.jsx", "app/layout.js", "app/page.js", "app/provider.js", "app/ConvexClientProvider.js", "configs/AiModel.jsx"],
   "exclude": ["node_modules"]
 }

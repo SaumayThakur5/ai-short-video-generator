@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image';
 import Authentication from './Authentication';
 import {useAuthContext} from '../provider';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
 
 function Header() {
