@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image';
 import Authentication from './Authentication';
 import {useAuthContext} from '../provider';
-import {Button} from '../../components/ui/Button';
+import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 function Header() {
@@ -22,7 +22,7 @@ function Header() {
        </div>
        <div>
         {!user ? <Authentication>
-        <button>Get Started</button>
+        <Button>Get Started</Button>
         </Authentication>
         : <div className='flex items-center gap-3'>
           <Link href={'./dashboard'}>
