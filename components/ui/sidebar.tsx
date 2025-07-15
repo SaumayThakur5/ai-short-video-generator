@@ -256,18 +256,25 @@ function Sidebar({
 function SidebarTrigger({
   className,
   onClick,
+  variant = "ghost",
+  size = "icon",
   ...props
-}: React.ComponentProps<typeof Button>) {
+}: React.ComponentProps<typeof Button> & {
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
+  className?: string
+  variant?: string
+  size?: string
+}) {
   const { toggleSidebar } = useSidebar()
 
   return (
     <Button
       data-sidebar="trigger"
       data-slot="sidebar-trigger"
-      variant="ghost"
-      size="icon"
+      variant={variant}
+      size={size}
       className={cn("size-7", className)}
-      onClick={(event) => {
+      onClick={(event: React.MouseEvent<HTMLButtonElement>) => {
         onClick?.(event)
         toggleSidebar()
       }}
@@ -278,6 +285,7 @@ function SidebarTrigger({
     </Button>
   )
 }
+
 
 function SidebarRail({ className, ...props }: React.ComponentProps<"button">) {
   const { toggleSidebar } = useSidebar()
